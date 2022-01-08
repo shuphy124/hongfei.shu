@@ -10,7 +10,7 @@ nav ul, footer ul {
 }
 nav ul li, footer ul li {
     display: inline;
-    margin-right: 5px;
+    margin-right: 1px;
 }
 a {
     text-decoration: none;
@@ -34,7 +34,7 @@ footer {
 }
 
 ul.posts { 
-    margin: 1px auto 2px; 
+    margin: .9px auto 1px; 
     font-size: .8em;
 }
 
