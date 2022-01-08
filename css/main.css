@@ -1,68 +1,43 @@
-/* IE voodoo courtesy of http://stackoverflow.com/a/4617511/263871 and
- * http://www.useragentman.com/IETransformsTranslator */
-.github-fork-ribbon-wrapper.right .github-fork-ribbon {
-  /* IE positioning hack (couldn't find a transform-origin alternative for IE) */
-  top: -22px;
-  right: -62px;
-
-  /* IE8+ */
-  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865474, M12=-0.7071067811865477, M21=0.7071067811865477, M22=0.7071067811865474, SizingMethod='auto expand')";
-  /* IE6 and 7 */
-  filter: progid:DXImageTransform.Microsoft.Matrix(
-    M11=0.7071067811865474,
-    M12=-0.7071067811865477,
-    M21=0.7071067811865477,
-    M22=0.7071067811865474,
-    SizingMethod='auto expand'
-  );
+body {
+    margin: 10px auto;
+    width: 50%;
+}
+nav ul, footer ul {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    padding: 0px;
+    list-style: none;
+    font-weight: bold;
+}
+nav ul li, footer ul li {
+    display: inline;
+    margin-right: 10px;
+}
+a {
+    text-decoration: none;
+    color: #999;
+}
+a:hover {
+    text-decoration: underline;
+}
+h1 {
+    font-size: 3em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+}
+p {
+    font-size: 1.5em;
+    line-height: 1.4em;
+    color: #333;
+}
+footer {
+    border-top: 1px solid #d5d5d5;
+    font-size: .8em;
 }
 
-.github-fork-ribbon-wrapper.left .github-fork-ribbon {
-  top: -22px;
-  left: -22px;
-
-  /* IE8+ */
-  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865483, M12=0.7071067811865467, M21=-0.7071067811865467, M22=0.7071067811865483, SizingMethod='auto expand')";
-  /* IE6 and 7 */
-  filter: progid:DXImageTransform.Microsoft.Matrix(
-    M11=0.7071067811865483,
-    M12=0.7071067811865467,
-    M21=-0.7071067811865467,
-    M22=0.7071067811865483,
-    SizingMethod='auto expand'
-  );
+ul.posts { 
+    margin: 10px auto 20px; 
+    font-size: 1.5em;
 }
 
-.github-fork-ribbon-wrapper.left-bottom .github-fork-ribbon {
-  /* IE positioning hack (couldn't find a transform-origin alternative for IE) */
-  top: 12px;
-  left: -22px;
-
-
-  /* IE8+ */
-  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865474, M12=-0.7071067811865477, M21=0.7071067811865477, M22=0.7071067811865474, SizingMethod='auto expand')";
-  /* IE6 and 7 */
-/*  filter: progid:DXImageTransform.Microsoft.Matrix(
-    M11=0.7071067811865474,
-    M12=-0.7071067811865477,
-    M21=0.7071067811865477,
-    M22=0.7071067811865474,
-    SizingMethod='auto expand'
-  );
-*/}
-
-.github-fork-ribbon-wrapper.right-bottom .github-fork-ribbon {
-  top: 12px;
-  right: -62px;
-
-  /* IE8+ */
-  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865483, M12=0.7071067811865467, M21=-0.7071067811865467, M22=0.7071067811865483, SizingMethod='auto expand')";
-  /* IE6 and 7 */
-  filter: progid:DXImageTransform.Microsoft.Matrix(
-    M11=0.7071067811865483,
-    M12=0.7071067811865467,
-    M21=-0.7071067811865467,
-    M22=0.7071067811865483,
-    SizingMethod='auto expand'
-  );
+ul.posts li {
+    list-style: none;
 }
